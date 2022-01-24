@@ -1,4 +1,38 @@
 .footer{
     background: $blue1;
     padding: 6rem 0;
+    &__title{
+        color: #fff;
+        font-size: 3.5rem;
+        margin-bottom: 2.5rem;
+    }
+    &__link{
+        color: #fff;
+        display: flex;
+        align-items: center;
+        margin: .5rem .5rem .5rem 0;
+    }
+    &__label{
+        font-size: 1.5rem;
+        color: #fff;
+        margin-bottom: 18px;
+        margin-top: 60px;
+        @include md{
+            margin-top: 0px;
+        }
+    }
+    &__mail{
+        padding: .75rem 1rem;
+        border-radius: 0;
+        margin-bottom: 14px;
+        width: 100%;
+        max-width: 100%;
+        @include md{
+            max-width: 275px;
+            margin-top: 0px;
+        }        
+    }
+    &__text{
+        color: #ffffff80;
+    }
 }

@@ -1,6 +1,7 @@
 <template>
-  <div class="booking row">
-    <div class="col">
+<div class="booking__outer">
+  <div class="booking row flex-column flex-md-row">
+    <div class="col booking__item">
       <div class="py-4 px-5">
         <p class="booking__text mb-4">ARRIVAL</p>
         <div class="d-flex">
@@ -14,7 +15,7 @@
         </div>
       </div>
     </div>
-    <div class="col booking--bl">
+    <div class="col booking__item">
       <div class="py-4 px-5">
         <p class="booking__text mb-4">DEPARTURE</p>
         <div class="d-flex">
@@ -28,9 +29,9 @@
         </div>
       </div>
     </div>
-    <div class="col booking--bb">
+    <div class="col booking__item">
       <div class="row">
-        <div class="col py-4 booking--br">
+        <div class="col py-4 booking--border--r">
           <p class="booking__text text-center mb-4">ADULTS</p>
           <div class="d-flex justify-content-center">
             <button class="booking__btn">
@@ -71,4 +72,6 @@
       />
     </div>
   </div>
+</div>
+
 </template>

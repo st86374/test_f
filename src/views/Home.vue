@@ -6,13 +6,13 @@
         <span class="banner__text">Luxury Boutique Hotel</span>
         <div class="d-flex py-5">
           <a class="banner__link" href=""
-            ><img src="@/assets/img/Image_FB.svg" alt=""
+            ><img class="img-fluid" src="@/assets/img/Image_FB.svg" alt=""
           /></a>
           <a class="banner__link mx-2" href=""
-            ><img src="@/assets/img/Image_twitter.svg" alt=""
+            ><img class="img-fluid" src="@/assets/img/Image_twitter.svg" alt=""
           /></a>
           <a class="banner__link" href=""
-            ><img src="@/assets/img/Image_ig.svg" alt=""
+            ><img class="img-fluid" src="@/assets/img/Image_ig.svg" alt=""
           /></a>
         </div>
       </div>
@@ -20,7 +20,7 @@
     </div>
   </section>
   <section class="about">
-    <div class="container-xl d-flex justify-content-between align-items-center">
+    <div class="container-xl d-flex justify-content-between align-items-center flex-column flex-md-row">
       <div class="about__content">
         <h2 class="about__title">Luxury Plaza Hotel for You</h2>
         <p class="about__text">

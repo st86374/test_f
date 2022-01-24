@@ -10,28 +10,67 @@
     }
     &__menu{
         position: absolute;
-        right: 50%;
-        bottom: 50%;
-        transform: translate(50%,50%);
-        font-size: 1.125rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        height: 100vh;
+        left: -100%;
+        top: 0;
+        padding-top: 80px;
+        max-width: 80%;
+        width: 100%;
+        background: $blue1;
+        transition: .3s;
+        transform: translate(0,0);
         &--item{
             a{
                 color: #fff;
                 padding: .5rem 1.5rem;
                 font-size: 1.125rem;
+                display: block;
+                border-bottom: 1px solid #fff;
+                @include md{
+                    display: inline;
+                    border: none;
+                }
             }
+        }
+        &.active{
+            left: 0;
+        }        
+        @include md{
+            width: auto;
+            max-width: auto;
+            height: auto;
+            padding: 0;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            &.active{
+                left: 50%;
+            } 
         }
     }
     &__login{
         color: #fff;
-        max-width: 170px;
+        min-width: 120px;
         text-align: center;
         width: 100%;
         border-radius: 24px;
         border: 1px solid #FFFFFF4B;
         padding: 1rem;
+        margin: 0 .5rem;
+        @include md{
+            min-width: 170px
+        }
+    }
+    &__btn{
+        min-width: 48px;
+        height: 48px;
+        display: block;
+        @include md{
+            display: none;
+        }
     }
 }
