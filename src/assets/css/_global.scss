@@ -1,0 +1,59 @@
+$blue1:#2C4664;
+$blue2:#21364E;
+$gray1:#EDF1F5;
+$gray2:#DADADA;
+$gray3:#6E6E6E;
+$black:#333333;
+$green:#C8FF8C;
+
+@mixin xxl() {
+    @media (min-width:1400px) {
+        @content
+    }
+}
+
+;
+
+@mixin xl() {
+    @media (min-width:1200px) {
+        @content
+    }
+}
+
+;
+
+@mixin lg() {
+    @media (min-width:992px) {
+        @content
+    }
+}
+
+;
+
+@mixin md() {
+    @media (min-width:768px) {
+        @content
+    }
+}
+
+;
+
+@mixin sm() {
+    @media (min-width:576px) {
+        @content
+    }
+}
+
+@font-face {
+    font-family: 'Hei Light Font';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url('@/assets/fonts/font.ttf') format('truetype');
+}
+body{
+    font-family: 'Hei Light Font';
+}
+.cursor-pointer{
+    cursor: pointer!important;
+}

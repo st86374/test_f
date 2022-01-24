@@ -1,0 +1,61 @@
+.booking {
+  background: $blue1;
+  border-radius: 25px;
+  width: 100%;
+  position: relative;
+  &__text {
+    color: #ffffff7e;
+    font-size: 0.875rem;
+  }
+  &--bl {
+    border-left: 1px solid $blue2;
+  }
+  &--br {
+    border-right: 1px solid $blue2;
+  }  
+  &--bb {
+    border-right: 1px solid $blue2;
+    border-left: 1px solid $blue2;
+  }    
+  &__num{
+      font-size: 3.5rem;
+      color: #fff;
+      margin-right: 22px;
+  }
+  &__select{
+      color: #fff;
+      position: relative;
+      &:after{
+          background-image: url('@/assets/img/button_onlyDropDown.svg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          content:'';
+          width: 10px;
+          height: 10px;
+          display: inline-block;
+          margin-left: 11px;
+
+        //   position: absolute;
+        //   right: 0;
+        //   bottom: 0;
+      }
+  }
+  &__btn{
+      background: transparent;
+      border: none;
+  }
+  &__check{
+      background: $green;
+      color: #333333;
+      padding: 1rem 1.5rem;
+      border-radius: 25px;
+      border: none;
+  }
+  &__next{
+      position: absolute;
+      right: 50%;
+      bottom:0;
+      transform: translate(50%,50%);
+      cursor: pointer;
+  }
+}
