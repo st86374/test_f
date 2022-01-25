@@ -109,11 +109,7 @@
         </div>
       </div>
       <div>
-        <a
-          href="#AboutSm"
-          class="booking__next"
-          v-smooth-scroll
-        >
+        <a href="#" class="booking__next" @click.prevent="scrollPoint()">
           <img src="@/assets/img/button_dropDown.svg" alt="" />
         </a>
       </div>
@@ -124,7 +120,7 @@
 import { ref, inject, computed, onMounted } from "vue";
 import DatePicker from "vue-datepicker-next";
 import "vue-datepicker-next/index.css";
-const pageWidth = ref(window.innerWidth)
+const pageWidth = ref(window.innerWidth);
 const check = ref({
   date: ["", ""],
   child: 0,
@@ -178,12 +174,14 @@ const dateText = (i, str) => {
 };
 const myEl = ref(null);
 const smoothScroll = inject("smoothScroll");
-const scrollToMyEl = () => {
-  smoothScroll({
-    scrollTo: myEl.value,
-    hash: "#About"
-  });
+// const scrollToMyEl = () => {
+//   smoothScroll({
+//     scrollTo: myEl.value,
+//     hash: "#About"
+//   });
+// };
+const scrollPoint = () => {
+  const block = document.querySelector(".about__point");
+  scrollTo(block.offsetTop, block.offsetTop);
 };
-
-
 </script>

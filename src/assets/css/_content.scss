@@ -57,9 +57,9 @@
   }  
   &__point{
     position: absolute;
-    top: -20%;
+    top: 120%;
     @include lg{
-      top: -34.5%;
+      top: 100%;
     }
   }
   &__title {
