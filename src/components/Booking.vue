@@ -19,9 +19,8 @@
                   value-type="format"
                   type="date"
                   range
+                  :readonly="true"
                   v-model:value="check.date"
-                                    @click="keyHide()"
-
                 ></DatePicker>
               </div>
             </div>
@@ -47,7 +46,7 @@
                   type="date"
                   range
                   v-model:value="check.date"
-                  @click="keyHide()"
+                  :readonly="true"
                 ></DatePicker>
               </div>
             </div>
@@ -185,14 +184,9 @@ const scrollPoint = () => {
   const block = document.querySelector(".about__point");
   scrollTo(block.offsetTop, block.offsetTop);
 };
-const keyHide =()=>{
-  var field = document.createElement("input");
-  field.setAttribute("type", "text");
-  field.setAttribute("style", "display:none;");
-  document.querySelector('.booking').appendChild(field);
-  setTimeout(function () {
-    field.focus();
-    document.querySelector('.booking').removeChild(field);
-  }, 50);
-}
+onMounted(() => {
+  var type = document.getElementsByTagName("input");
+  type[0].readOnly = true;
+  type[1].readOnly = true;
+});
 </script>
