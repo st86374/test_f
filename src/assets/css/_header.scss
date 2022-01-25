@@ -4,21 +4,24 @@
     left: 0;
     width: 100%;
     color: #fff;
+    background: transparent;
+    transition: .3s;
+    z-index: 10;
     &__logo{
         font-size: 2.5rem;
         color: #fff;
     }
     &__menu{
         position: absolute;
-        height: 100vh;
+        height: calc(100vh - 80px);
         left: -100%;
-        top: 0;
-        padding-top: 80px;
+        top: 80px;
         max-width: 80%;
         width: 100%;
         background: $blue1;
         transition: .3s;
         transform: translate(0,0);
+        z-index: 9;
         &--item{
             a{
                 color: #fff;
@@ -26,16 +29,23 @@
                 font-size: 1.125rem;
                 display: block;
                 border-bottom: 1px solid #fff;
-                @include md{
+                transition: .3s;
+                &:hover{
+                    background: $blue2;
+                }
+                @include lg{
                     display: inline;
                     border: none;
+                    &:hover{
+                        background: transparent
+                    }                    
                 }
             }
         }
         &.active{
             left: 0;
         }        
-        @include md{
+        @include lg{
             width: auto;
             max-width: auto;
             height: auto;
@@ -61,7 +71,7 @@
         border: 1px solid #FFFFFF4B;
         padding: 1rem;
         margin: 0 .5rem;
-        @include md{
+        @include lg{
             min-width: 170px
         }
     }
@@ -69,8 +79,12 @@
         min-width: 48px;
         height: 48px;
         display: block;
-        @include md{
+        cursor: pointer;
+        @include lg{
             display: none;
         }
+    }
+    &.active{
+        background: $blue1;
     }
 }

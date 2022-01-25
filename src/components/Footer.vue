@@ -1,9 +1,9 @@
 <template>
   <footer class="footer">
-    <div class="container-xl d-flex align-items-md-center justify-content-between flex-column flex-md-row">
+    <div class="container-xl d-flex align-items-lg-center justify-content-between flex-column flex-lg-row">
       <div>
         <h2 class="footer__title">HOTEL</h2>
-        <div class="d-flex flex-column flex-md-row">
+        <div class="d-flex flex-column flex-lg-row">
           <a href="" class="footer__link">
             <img class="me-2" src="@/assets/img/Image_phone.svg" alt="" />
             (4321) 0987-654-320

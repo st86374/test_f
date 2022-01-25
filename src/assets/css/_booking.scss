@@ -13,7 +13,7 @@
       border: none;
     }
 
-    @include md {
+    @include lg {
       border-bottom: 0;
       border-right: 1px solid $blue2;
 
@@ -31,24 +31,12 @@
     color: #ffffff7e;
     font-size: 0.875rem;
   }
-
-  &--bl {
-    border-left: 1px solid $blue2;
-  }
-
-  &--br {
-    border-right: 1px solid $blue2;
-  }
-
-  &--bb {
-    border-right: 1px solid $blue2;
-    border-left: 1px solid $blue2;
-  }
-
   &__num {
     font-size: 3.5rem;
     color: #fff;
     margin-right: 22px;
+    text-align: center;
+    min-width: 56px;
   }
 
   &__select {
@@ -63,11 +51,9 @@
       width: 10px;
       height: 10px;
       display: inline-block;
-      margin-left: 11px;
-
-      //   position: absolute;
-      //   right: 0;
-      //   bottom: 0;
+      position: absolute;
+      right: -20px;
+      bottom: 0;
     }
   }
 
@@ -85,7 +71,7 @@
 
     border: none;
 
-    @include md {
+    @include lg {
       margin: 0;
     }
   }
@@ -99,10 +85,21 @@
   }
 
   &__outer {
-    padding: 0 15px;
     width: 100%;
     position: static;
     transform: translate(0, 0);
   }
-
+  .date_outer{
+    left:0;
+    top: 0;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .mx-datepicker-range{
+    width: calc(100% + 20px)!important;
+  }
+  .mx-calendar-content .cell.active{
+    background: $blue1;
+  }
 }
