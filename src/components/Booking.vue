@@ -15,12 +15,13 @@
               <p class="booking__text">{{ dateText(0, "day") }}</p>
               <div class="date_outer">
                 <DatePicker
-                  id="daterange"
                   format="YYYY-MM-DD"
                   value-type="format"
                   type="date"
                   range
                   v-model:value="check.date"
+                                    @click="keyHide()"
+
                 ></DatePicker>
               </div>
             </div>
@@ -41,12 +42,12 @@
               <p class="booking__text">{{ dateText(1, "day") }}</p>
               <div class="date_outer">
                 <DatePicker
-                  id="daterange"
                   format="YYYY-MM-DD"
                   value-type="format"
                   type="date"
                   range
                   v-model:value="check.date"
+                  @click="keyHide()"
                 ></DatePicker>
               </div>
             </div>
@@ -172,8 +173,8 @@ const dateText = (i, str) => {
       return week[d];
   }
 };
-const myEl = ref(null);
-const smoothScroll = inject("smoothScroll");
+// const myEl = ref(null);
+// const smoothScroll = inject("smoothScroll");
 // const scrollToMyEl = () => {
 //   smoothScroll({
 //     scrollTo: myEl.value,
@@ -184,16 +185,14 @@ const scrollPoint = () => {
   const block = document.querySelector(".about__point");
   scrollTo(block.offsetTop, block.offsetTop);
 };
-onMounted(()=>{
-  var field = document.createElement('input');
-field.setAttribute('type', 'text');
-document.body.appendChild(field);
-
-setTimeout(function() {
+const keyHide =()=>{
+  var field = document.createElement("input");
+  field.setAttribute("type", "text");
+  field.setAttribute("style", "display:none;");
+  document.querySelector('.booking').appendChild(field);
+  setTimeout(function () {
     field.focus();
-    setTimeout(function() {
-        field.setAttribute('style', 'display:none;');
-    }, 50);
-}, 50);
-})
+    document.querySelector('.booking').removeChild(field);
+  }, 50);
+}
 </script>
