@@ -71,6 +71,12 @@
         border: 1px solid #FFFFFF4B;
         padding: 1rem;
         margin: 0 .5rem;
+        transition: .3s;
+        background: transparent;
+        &:hover{
+            background: $blue2;
+            color: #fff;
+        }
         @include lg{
             min-width: 170px
         }
@@ -80,6 +86,12 @@
         height: 48px;
         display: block;
         cursor: pointer;
+        transition: .3s;
+        background: transparent;
+        border-radius: 50%;
+        &:hover{
+            background: $blue2;
+        }
         @include lg{
             display: none;
         }

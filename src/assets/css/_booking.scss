@@ -68,9 +68,11 @@
     padding: 1rem 1.5rem;
     border-radius: 25px;
     margin: 47px 0;
-
     border: none;
-
+    transition: .3s;
+    &:hover{
+      transform: scale(1.1);
+    }
     @include lg {
       margin: 0;
     }
@@ -82,6 +84,10 @@
     bottom: 0;
     transform: translate(50%, 50%);
     cursor: pointer;
+    transition: .3s;
+    &:hover{
+      transform: translate(50%, 50%) scale(1.1);
+    }
   }
 
   &__outer {
@@ -100,6 +106,12 @@
     width: calc(100% + 20px)!important;
   }
   .mx-calendar-content .cell.active{
-    background: $blue1;
+    background: $blue1!important;
   }
+  .mx-datepicker-popup{
+  position: fixed;
+  right: 50%!important;
+  bottom: 50%!important;
+  transform: translate(50%,50%);
+}
 }

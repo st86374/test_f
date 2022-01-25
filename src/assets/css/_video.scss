@@ -10,6 +10,12 @@
         left: 0;
         background: #fff;
         width: 100%;
+        img{
+           transition: .3s;
+           &:hover{
+               transform: scale(1.1);
+           } 
+        }
     }
     &__btn--text{
         font-size: 1.5rem;

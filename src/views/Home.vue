@@ -19,8 +19,9 @@
       <Booking></Booking>
     </div>
   </section>
-  <section class="about">
-    <div class="container-xl d-flex justify-content-between align-items-center flex-column flex-lg-row">
+  <section id="About" class="about">
+    <div class="container-xl d-flex justify-content-between align-items-center flex-column flex-lg-row position-relative">
+      <div class="about__point" id="AboutSm"></div>
       <div class="about__content">
         <h2 class="about__title">Luxury Plaza Hotel for You</h2>
         <p class="about__text">
