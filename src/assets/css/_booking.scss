@@ -108,12 +108,6 @@
   .mx-calendar-content .cell.active{
     background: $blue1!important;
   }
-  .mx-datepicker-popup{
-  position: fixed;
-  right: 50%!important;
-  bottom: 50%!important;
-  transform: translate(50%,50%);
-}
 .mx-icon-clear{
   display: none!important;
 }
