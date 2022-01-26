@@ -1,7 +1,10 @@
-# Vue 3 + Vite
-
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+# 使用技術
+- Vite
+- Vue3
+- Bootstrap5
+- vue-datepicker-next
+# 組件
+- Header 頭部
+- Footer 頭部
+- Booking 訂房區塊
+- VideoCard 影片卡片

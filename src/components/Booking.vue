@@ -190,17 +190,3 @@ onMounted(() => {
   type[1].readOnly = true;
 });
 </script>
-<style>
-.mx-datepicker-popup{
-  transition: .3s;
-  background-color: transparent;
-}
-.mx-datepicker-content{
-  transition: .3s;
-  background: #fff;
-  position: fixed;
-  right: 50%;
-  bottom: 50%;
-  transform: translate(50%,50%);
-}
-</style>
